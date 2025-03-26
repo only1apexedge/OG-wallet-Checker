@@ -29,4 +29,33 @@
       <h1 class="hero-title">ARE YOU A MAXIMAL?</h1>
       <p class="hero-subtitle">Check if your wallet is whitelisted and join the elite.</p>
       <div class="checker-box">
-        <input type="text" id="walletInput" placeholder="Enter your
+        <input type="text" id="walletInput" placeholder="Enter your wallet address">
+        <button id="checkButton" onclick="checkWhitelist()">Check</button>
+        <p id="message" class="message"></p>
+      </div>
+
+      <!-- New OG Checker Section (added right below the whitelist checker) -->
+      <div class="checker-box" id="og-checker">
+        <input type="text" id="ogWalletInput" placeholder="Enter your wallet address for OG check">
+        <button id="ogCheckButton" onclick="checkOG()">Check OG</button>
+        <p id="ogMessage" class="message"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="socials">
+        <a href="https://x.com/Maximal_Labs" target="_blank" title="Twitter">Twitter</a>
+        <a href="https://discord.gg/QzbqzMTB9p" target="_blank" title="Discord">Discord</a>
+      </div>
+      <p>&copy; 2025 Maximals NFT. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="whitelist.js"></script>
+  <script src="script.js"></script>
+  <script src="OG.js"></script>
+</body>
+</html>
