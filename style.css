@@ -5,11 +5,14 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: 'Arial', sans-serif;
   background: url('assets/background.jpg') no-repeat center center/cover;
   background-size: cover;
   color: #fff;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
 
 /* Header & Navigation */
@@ -118,7 +121,4 @@ body {
   .checker-box {
     width: 90%;
   }
-}
-html, body {
-  overflow: hidden;
 }
