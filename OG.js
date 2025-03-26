@@ -20,7 +20,6 @@ function checkOG() {
     ogMessageEl.innerText = "⏳ Checking...";
     ogMessageEl.style.color = "blue";
 
-    // Simulate a check delay
     setTimeout(() => {
         const normalizedOGData = OG_DATA.map(addr => addr.toLowerCase());
         if (normalizedOGData.includes(wallet.toLowerCase())) {
